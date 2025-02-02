@@ -1,0 +1,252 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header & Footer */
+header, footer {
+    background-color: lightblue;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: lightblue;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    border-color:black;
+    border: 2px;
+    box-shadow: 2px solid black;
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1100;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: lightblue;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .navbar li {
+        padding: 10px 0;
+    }
+
+    #menu-toggle:checked ~ .navbar {
+        display: flex;
+    }
+}
+    
+    
+    
+        #tungaaa {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: center;
+            font-size: 50px;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .junior-high {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            text-decoration: none;
+        }
+        
+        .junior-high h3 {
+            text-decoration: none; 
+            background: white; 
+            color: black;
+            font-size: 30px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px aqua;
+            cursor: pointer;    
+            border: 1px solid aquamarine;
+            border-radius: 5px;
+            
+            margin-left: 15%;
+            margin-right: 15%;
+            text-decoration: none;
+        }
+        
+        .program {
+            position: relative;
+            width: 60%;
+            margin: 0 20%;
+            transition: margin-bottom 0.5s;
+            text-decoration: none;
+        }
+    
+        .program a{
+            text-decoration: none;
+        }
+        
+        .program .info {
+            display: none;
+            background: white;
+            color: black;
+            padding: 10px;
+            border: 1px solid aquamarine;
+            border-radius: 5px;
+            box-shadow: 0 0 10px aqua;
+            position: absolute;
+            top: calc(100% + 10px); /* Position below the h3 element with some space */
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto; /* Adjust width to fit content */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.5s, max-height 0.5s;
+            max-height: 0; /* Initially hidden */
+            overflow: hidden; /* Hide overflow content */
+            z-index: 1; /* Ensure it appears above other elements */
+        }
+        
+        .junior-high .program:hover .info {
+            display: block;
+            opacity: 1; /* Ensure visibility on hover */
+            max-height: 200px; /* Adjust based on content height */
+            text-decoration: none;
+        }
+        footer {
+            background: lightblue;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer-row  {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 5px 0;
+        }
+        
+        .footer-col h4 {
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        /*gapsa tibaghak*/
+        .footer-col ul li {
+            margin: 2px 0;
+        }
+        
+        .footer-col ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .footer-col ul li a:hover {
+            color: white;
+        }
+        
+        .footer-col form {
+            margin-top: 10px;
+        }
+        
+        .footer-col input {
+            padding: 5px;
+            border: none;
+        }
+        
+        .footer-col button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background: whitesmoke;
+            color: black;
+            cursor: pointer;
+        }
+        
+        .footer-col button:hover {
+            background: gray;
+        }
+        #menu-toggle {
+            display: none;
+        }
+        
+        #menu-toggle:che {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block
+            }
+        
+        
+        }
